@@ -1,5 +1,6 @@
 header {
-    background-color: #00376e; /* Cor de fundo diferente para o segundo cabeçalho */
+    background-color: #00376e;
+    /* Cor de fundo diferente para o segundo cabeçalho */
     color: #fff;
     padding: 20px;
 }
@@ -47,7 +48,8 @@ header nav ul li a {
 
 /* Estilo para o segundo cabeçalho */
 .header2 {
-    background-color: #003d79; /* Cor de fundo diferente para o segundo cabeçalho */
+    background-color: #003d79;
+    /* Cor de fundo diferente para o segundo cabeçalho */
     color: #000590;
     padding: 20px;
 }
@@ -91,8 +93,10 @@ header nav ul li a {
 .featured-artwork h2 {
     margin-bottom: 20px;
 }
+
 .header3 {
-    background-color: #0255a8; /* Cor de fundo diferente para o terceiro cabeçalho */
+    background-color: #0255a8;
+    /* Cor de fundo diferente para o terceiro cabeçalho */
     color: #fff;
     padding: 20px;
 }
