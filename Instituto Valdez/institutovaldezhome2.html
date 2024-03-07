@@ -13,12 +13,12 @@
   <style>
     h1 {
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size: 25px;
+      font-size: 50px;
     }
 
     button {
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size: 15px;
+      font-size: 20px;
       background-color: #ffffff;
     }
   </style>
@@ -26,22 +26,16 @@
     <header>
       <h1>INSTITUTO VALDEZ</h1>
     </header>
-    <header class="header2" <a
-      href="file:///C:/Users/Aluno%202/Documents/GitHub/InstitutoValdez/institutovaldezhome.html#">
-      <button>História</button></a>
-      <a
-        href="file:///C:/Users/Aluno%202/Documents/GitHub/InstitutoValdez/institutovaldezhome.html#"><button>Artes</button></a>
-      <a
-        href="file:///C:/Users/Aluno%202/Documents/GitHub/InstitutoValdez/institutovaldezhome.html#"><button>Performaces</button></a>
-      <a
-        href="file:///C:/Users/Aluno%202/Documents/GitHub/InstitutoValdez/institutovaldezhome.html#"><button>Leilões</button></a>
-      <a
-        href="file:///C:/Users/Aluno%202/Documents/GitHub/InstitutoValdez/institutovaldezhome.html#"><button>Eventos</button></a>
-      <a
-        href="file:///C:/Users/Aluno%202/Documents/GitHub/InstitutoValdez/Instituto%20Valdez/login.html"><button>Login</button></a>
-      <a
-        href="file:///C:/Users/Aluno%202/Documents/GitHub/InstitutoValdez/Instituto%20Valdez/vip.html"><button>vip</button></a>
-
+    <header class="header2">
+        <nav>
+      <a href="historia.html"><button>História</button></a>
+      <a href="file:///C:/Users/Aluno%202/Documents/GitHub/InstitutoValdez/institutovaldezhome.html#"><button>Artes</button></a>
+      <a href="file:///C:/Users/Aluno%202/Documents/GitHub/InstitutoValdez/institutovaldezhome.html#"><button>Performaces</button></a>
+      <a href="file:///C:/Users/Aluno%202/Documents/GitHub/InstitutoValdez/institutovaldezhome.html#"><button>Leilões</button></a>
+      <a href="file:///C:/Users/Aluno%202/Documents/GitHub/InstitutoValdez/institutovaldezhome.html#"><button>Eventos</button></a>
+      <a href="file:///C:/Users/Aluno%202/Documents/GitHub/InstitutoValdez/Instituto%20Valdez/login.html"><button>Login</button></a>
+      <a href="vip3.html"><button>vip</button></a>
+      </nav>
     
   </center>
   </header>
@@ -60,7 +54,7 @@
       <li>
             <input type="radio" id="slide3" name="slide">
             <label for="slide3"></label>
-            <img src="world.png" />
+            <img src="a8.png" />
       </li>
   </ul>
 
@@ -81,7 +75,63 @@
 
     <section class="hero">
 
+      <style>
+        /* Estilo para o contêiner dos quadros de notícias */
+        .quadros-container {
+            display: flex; /* flexbox para organizar os quadros horizontalmente */
+            justify-content: center; /* centralizar os quadros na horizontal */
+        }
+    
+        /* Estilo para cada quadro de notícias */
+        .quadro {
+            width: 300px; /* largura fixa para cada quadro */
+            border: 1px solid #7a0663; /* borda sólida de cor cinza */
+            padding: 10px; /* preenchimento interno */
+            margin-right: 20px; /* margem à direita para separar os quadros */
+            background-color: #8700a9; /* cor de fundo dos quadros */
+        }
+    
+        /* Estilo para o título do quadro */
+        .titulo-quadro {
+            font-weight: bold; /* negrito para o título */
+            margin-bottom: 5px; /* margem inferior para separar o título do conteúdo */
+        }
+    
+        /* Estilo para a imagem do quadro */
+        .imagem-quadro {
+            max-width: 100%; /* garantir que a imagem não ultrapasse a largura do quadro */
+            height: auto; /* altura automática para manter a proporção */
+            margin-bottom: 10px; /* margem inferior para separar a imagem do conteúdo */
+        }
+    
+        /* Estilo para o corpo do quadro */
+        .corpo-quadro {
+            color: #fefaff; /* cor do texto do corpo do quadro */
+        }
+    </style>
+</head>
 
+    <div class="quadros-container">
+        <div class="quadro">
+            <div class="titulo-quadro">Notícia 1</div>
+            <img class="imagem-quadro" src="a1.jpg" alt="Imagem da Notícia 1">
+            <div class="corpo-quadro">Conteúdo da Notícia 1.</div>
+        </div>
+        <div class="quadro">
+            <div class="titulo-quadro">Notícia 2</div>
+            <img class="imagem-quadro" src="a1.jpg" alt="Imagem da Notícia 2">
+            <div class="corpo-quadro">Conteúdo da Notícia 2.</div>
+        </div>
+        <div class="quadro">
+            <div class="titulo-quadro">Notícia 3</div>
+            <img class="imagem-quadro" src="a1.jpg" alt="Imagem da Notícia 3">
+            <div class="corpo-quadro">Conteúdo da Notícia 3.</div>
+        </div>
+    </div>
+  <br>
+  <br>
+  <br>
+  <br>
       <a href="#" class="btn">Ver Mais</a>
     </section>
 
