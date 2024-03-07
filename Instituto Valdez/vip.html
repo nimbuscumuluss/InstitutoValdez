@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PMB</title>
+
+</head>
+
+
+
+<body>
+    <style>
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para a seção hero */
+.hero {
+    background-image: url('imagem_de_fundo.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a seção de obras em destaque */
+.featured-artwork {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.featured-artwork h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilo para o primeiro cabeçalho */
+header {
+    background-color: #00376e;
+    color: #fff;
+    padding: 20px;
+}
+
+
+
+
+
+
+    </style>
+
+    <header>
+
+        <h1>Área de Cadastro vip</h1>
+
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section>
+
+            <h3>Cadastro</h3>
+
+            <p>Preencha os campos abaixo para se cadastrar como membro vip.</p>
+
+            <form method="post" action="#">
+
+                <fieldset>
+
+                    <legend>Dados pessoais</legend>
+
+                    <label>Nome</label>
+
+                    <input type="text" name="nome" placeholder="digite seu nome" required>
+
+                    <label>Data de Nascimento</label>
+
+                    <input type="date" name="data_nascimento" required>
+
+                    <label>Telefone</label>
+
+                    <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>CNH</legend>
+
+                    <label>Número do Registro</label>
+
+                    <input type="number" name="numero_registro" placeholder="informe o número da sua CNH" required>
+
+                    <label>Validade</label>
+
+                    <input type="date" name="validade" required>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <fieldset>
+
+                        <legend>Cidade</legend>
+
+                        <label>Sua Cidade</label>
+
+                        <select name="cidade" required>
+
+                            <option value="">Escolha</option>
+
+                            <optgroup label="São Paulo">
+
+                                <option value="Santos">Santos</option>
+
+                                <option value="Peruíbe">Peruíbe</option>
+
+                                <option value="Itanhaém">Itanhaém</option>
+
+                            </optgroup>
+
+                            <optgroup label="Rio de Janeiro">
+
+                                <option value="Rio de Janeiro">Rio de Janeiro</option>
+
+                                <option value="Angra dos Reis.">Angra dos Reis.</option>
+
+                                <option value="Paraty">Paraty</option>
+
+                            </optgroup>
+
+                            <optgroup label="Bahia">
+
+                                <option value="Salvador">Salvador</option>
+
+                                <option value="	Ilhéus">Ilhéus</option>
+
+                                <option value="Porto Seguro">Porto Seguro</option>
+
+                            </optgroup>
+
+                        </select>
+
+                    </fieldset>
+
+                    <br>
+
+                    <button type="submit">Enviar dados</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+
+        <p>&copy; <small>CUMULUS</small></p>
+
+    </footer>
+
+</body>
+
+
+
+</html>
