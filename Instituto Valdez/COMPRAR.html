@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Valdez - Login</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Instituto Valdez</h1>
+        
+        <p>Bem-vindo ao Instituto Valdez! Aqui você pode comprar belas artes e apoiar nossos artistas. Preencha o formulário abaixo para fazer o login e começar a explorar nossa coleção.</p>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h3>Login</h3>
+            <form method="post" action="#">
+                <fieldset>
+                    <legend>Dados de Acesso</legend>
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Digite seu email" required>
+                    <label>Senha</label>
+                    <input type="password" name="senha" placeholder="Digite sua senha" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <label>Nome</label>
+                    <input type="text" name="nome" placeholder="Digite seu nome" required>
+                    <label>Estado</label>
+                    <select name="estado" required>
+                        <option value="">Escolha</option>
+                        <optgroup label="Norte">
+                            <option value="AC">Acre</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="PA">Pará</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="TO">Tocantins</option>
+                        </optgroup>
+                        <optgroup label="Nordeste">
+                            <option value="AL">Alagoas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="SE">Sergipe</option>
+                        </optgroup>
+                        <optgroup label="Centro-Oeste">
+                            <option value="GO">Goiás</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="DF">Distrito Federal</option>
+                        </optgroup>
+                        <optgroup label="Sudeste">
+                            <option value="ES">Espírito Santo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </optgroup>
+                        <optgroup label="Sul">
+                            <option value="PR">Paraná</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                        </optgroup>
+                    </select>
+                    <label>Telefone</label>
+                    <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                </fieldset>
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy; <small>Instituto Valdez</small></p>
+    </footer>
+</body>
+
+</html>
