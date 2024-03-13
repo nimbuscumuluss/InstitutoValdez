@@ -48,39 +48,85 @@
         <hr>
         
         <div>
-            <table class="leilaobox">
-                <tr>
-                    <td><img src="a1.jpg" height="300px" width="300px"></td>
-                    <td><p class="leilaotext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam animi porro eligendi numquam reiciendis similique repellendus ipsa suscipit et architecto, exercitationem aliquid labore fugit maiores eos deleniti amet dolor quibusdam.</p></td>
-                </tr>
-            </table>
-            <table class="leilaobox">
-                <tr>
-                    <td><img src="a2.jpeg" height="300px" width="300px"></td>
-                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam animi porro eligendi numquam reiciendis similique repellendus ipsa suscipit et architecto, exercitationem aliquid labore fugit maiores eos deleniti amet dolor quibusdam.</p></td>
-                </tr>
-            </table>
-            <table class="leilaobox">
-                <tr>
-                    <td><img src="a3.jpeg" height="300px" width="300px"></td>
-                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam animi porro eligendi numquam reiciendis similique repellendus ipsa suscipit et architecto, exercitationem aliquid labore fugit maiores eos deleniti amet dolor quibusdam.</p></td>
-                </tr>
-            </table>
-            <table class="leilaobox">
-                <tr>
-                    <td><img src="a5.jpeg" height="300px" width="300px"></td>
-                    <td><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam animi porro eligendi numquam reiciendis similique repellendus ipsa suscipit et architecto, exercitationem aliquid labore fugit maiores eos deleniti amet dolor quibusdam.</p></td>
-                </tr>
-            </table>
+            <button class="material-bubble">
+                <table class="leilaobox">
+                    <tr>
+                        <td><img src="a1.jpg" height="300px" width="300px"></td>
+                        <td><p class="leilaotext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam animi porro eligendi numquam reiciendis similique repellendus ipsa suscipit et architecto, exercitationem aliquid labore fugit maiores eos deleniti amet dolor quibusdam.</p></td>
+                    </tr>
+                </table>
+            </button>
+            <button class="material-bubble">
+                <table class="leilaobox">
+                    <tr>
+                        <td><img src="a2.jpeg" height="300px" width="300px"></td>
+                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam animi porro eligendi numquam reiciendis similique repellendus ipsa suscipit et architecto, exercitationem aliquid labore fugit maiores eos deleniti amet dolor quibusdam.</p></td>
+                    </tr>
+                </table>
+            </button>
+            <button class="material-bubble">
+                <table class="leilaobox">
+                    <tr>
+                        <td><img src="a3.jpeg" height="300px" width="300px"></td>
+                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam animi porro eligendi numquam reiciendis similique repellendus ipsa suscipit et architecto, exercitationem aliquid labore fugit maiores eos deleniti amet dolor quibusdam.</p></td>
+                    </tr>
+                </table>
+            </button>
+            <button class="material-bubble">
+                <table class="leilaobox">
+                    <tr>
+                        <td><img src="a5.jpeg" height="300px" width="300px"></td>
+                        <td><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam animi porro eligendi numquam reiciendis similique repellendus ipsa suscipit et architecto, exercitationem aliquid labore fugit maiores eos deleniti amet dolor quibusdam.</p></td>
+                    </tr>
+                </table>
+            </button>
         </div>
     </main>
 
 
 <!--CSS INTERNO-->
 <style>
+    
+img{
+    border-radius: 50px;
+    padding-left: 20px;
+    transition: 0.3s;
+}
+
+img:hover{
+    transform: scale(0.93)
+}
+
     .leilaotext p {
-        color: bisque;
+        color: rgb(255, 255, 255); 
     }
+
+    .material-bubble {
+  background-color: transparent;
+  color: darken;
+  border: solid rgb(166, 99, 174);
+  border-width: 10px;
+  overflow: hidden;
+  box-shadow: none ;
+  border-radius: 20px;
+  transition: 0.3s;
+  margin: 10px;
+  margin-left: 150px;
+  width: 700px;
+  align-items: center;
+  position: static;
+}
+  .material-bubble:hover {
+    color: whitesmoke;
+    animation: normal;
+    background-color: rgb(129, 31, 116);
+    border: solid rgb(111, 11, 86);
+    border-width: 10px;
+    transform: scale(1.1)
+}
+
+
+
 </style>
 <!--CSS INTERNO-->
 
