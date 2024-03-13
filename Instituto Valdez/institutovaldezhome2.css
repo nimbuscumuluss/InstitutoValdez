@@ -98,9 +98,9 @@ header {
     bottom: 10px;
     cursor: pointer;
     display: block;
-    height: 10px;
+    height: 5px;
     position: absolute;
-    width: 10px;
+    width: 5px;
     z-index: 10;
 }
 
