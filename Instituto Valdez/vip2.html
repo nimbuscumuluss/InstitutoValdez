@@ -2,39 +2,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="vip.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro VIP</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    p {
+        text-align: center;
+        color: #666;
+    }
+    form {
+        margin-top: 20px;
+    }
+    input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
 </head>
 <body>
-    <header>
-        <a href="siteqg.html"><button>Volte Aqui</button></a>
-    </header>
-    <hr>
-    <h1 align="center">
-        <strong>Escolha seu Plano!</strong>
-    </h1>
     <div class="container">
-        <div class="card">
-            <div class="card-title">
-                <h2>Plano Comum</h2>
-                <p> <i class="fa fa-rupee"></i><span>24,99</span>/mês </p>
-            </div>
-             <div class="card-content">
-                <ul>
-                    <li><i class="fa fa-check-circle"></i>Destaque exclusivo para suas obras de arte.</li>
-                    <li><i class="fa fa-check-circle"></i>Video Aulas</li>
-                    <li><i class="fa fa-times-circle"></i>PDF's para revisão</li>
-                    <li><i class="fa fa-times-circle"></i>Materiais Personalizados (avançado)</li>
-                    <li><i class="fa fa-check-circle"></i>Bate-papo com professores</li>
-                    <li><i class="fa fa-times-circle"></i>Materiais Personalizados (avançado)</li>
-                    <li><i class="fa fa-check-circle"></i>Materiais Personalizados (Básico)</li>
-                </ul>
-                <button> <a href="#">Assine agora</a></button>
-             </div>
-        </div>
+        <h1>Cadastro VIP</h1>
+        <p>Inscreva-se para receber atualizações exclusivas e ofertas especiais.</p>
+        <form action="#">
+            <input type="email" placeholder="Seu e-mail" required>
+            <input type="submit" value="Inscrever-se">
+        </form>
     </div>
+</body>
+</html>
+
 
    
