@@ -46,7 +46,7 @@ header {
 
 /* Estilo para o segundo cabeçalho */
 .header2 {
-    background-color: #003d79;
+    background-color: #004489;
     color: #000590;
 }
 
@@ -58,7 +58,7 @@ header {
 
 .linkvip {
     margin: -190px;
-    }
+}
 
 
 
@@ -67,10 +67,11 @@ header {
 .slider {
     display: block;
     height: 293px;
-    width: 600px;
+    width: 700px;
     margin: auto;
     margin-top: 20px;
     position: relative;
+    top: -40px;
 }
 
 .slider li {
@@ -84,7 +85,7 @@ header {
     width: 100%;
     vertical-align: top;
     border-radius: 30px;
-} 
+}
 
 
 .slider input {
@@ -97,9 +98,9 @@ header {
     bottom: 10px;
     cursor: pointer;
     display: block;
-    height: 10px;
+    height: 5px;
     position: absolute;
-    width: 10px;
+    width: 5px;
     z-index: 10;
 }
 
@@ -113,18 +114,31 @@ header {
 
 .slider li:nth-child(3) label {
     left: 70px;
-} 
+}
 
 .slider img {
     opacity: 0;
     visibility: hidden;
 }
 
-.slider li input:checked ~ img {
+.slider li input:checked~img {
     opacity: 1;
     visibility: visible;
     z-index: 10;
-} 
+
+}
+nav a:hover {
+    background-color: #666;
+  }
+
+  section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+  }
+
+
+
 
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -153,3 +167,4 @@ h1 {
     padding: 0px;
     margin: -6px;
   }
+
