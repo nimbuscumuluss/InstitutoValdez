@@ -65,9 +65,10 @@ p {
 
 footer {
     padding: 3%;
-    background-color: #99dcea;
+    background-color: #617fad;
     font-family: "Barlow Semi Condensed", sans-serif;
     color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 .logo {
@@ -97,3 +98,15 @@ footer {
     margin-top: 10px;
     margin-right: 10px;
 }
+
+.vald {
+    float: left;
+}
+
+.blank {
+    background-color: #6475d1;
+    display: block;
+    height: 26px;
+    
+}
+
