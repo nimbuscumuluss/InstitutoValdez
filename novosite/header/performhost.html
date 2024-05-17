@@ -111,19 +111,19 @@
         }
 
         ::-webkit-scrollbar-thumb {
-            background:  #5F9EA0;
+            background: #5F9EA0;
             border-radius: 10px;
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background:  #448d90;
+            background: #448d90;
         }
 
         .vid {
             display: inline-block;
         }
 
-        #num{
+        #num {
             margin-left: 5px;
             margin-right: 4px;
             border: solid lightslategray;
@@ -151,6 +151,11 @@
             color: #000000;
             background-color: #79cbce;
         }
+        
+        #Bio {
+            height: 100px;
+            width: 300px;
+        }
     </style>
 </head>
 
@@ -169,52 +174,32 @@
             class="logo"></a></li>
 </ul>
 <img src="img/b1.jpeg" width="100%">
+
+<!--menu e banner end-->
 <main>
     <div class="conteiner">
-        <h1>Explorar Performances</h1>
-        <h3 id="ask">deseja hostear uma performance? <a href="performhost.html" class="but">clique aqui!</a></h3>
-
-        <div id="divBusca">
-            <input type="text" id="txtBusca" placeholder="Buscar..." />
-            <button id="btnBusca">Buscar</button>
-        </div>
-
-        <hr>
-
-        <h2>Criticas Sociais </h2>
-
-        <div class="myBox">
-            <iframe class="vid" width="328" height="222" src="https://www.youtube.com/embed/ZVfnS4UWeRE"
-            title="CEGOS - Performance na Virada Cultural 2015" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe class="vid" width="328" height="222" src="https://www.youtube.com/embed/t-j0Ey2O4HU"
-            title="Light/ Dark- Marina Abramovic &amp; Ulay- performance art" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <h2>Arte Interativa </h2>
-
-        <div class="myBox">
-            <iframe width="328" height="222" src="https://www.youtube.com/embed/8VwJMw_fLvI" title="Yayoi Kusama: Infinity Mirrors | Arts | NPR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="328" height="222"src="https://www.youtube.com/embed/K9ZIrXlPI6c" title="O Bicho! Lygia Clark. Itaú Cultural. SP. 2012." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <h2>Outras exposições (+não presenciais) </h2>
-       
-        <div class="myBox"> 
-            <iframe width="328" height="222" src="https://www.youtube.com/embed/hZe-xwRJx10" title="Detailed gouache painting process walk-through" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
-       
-    </div><br> <br> <hr>
-
-    <div class="pages">
-        <span>Página</span>
-        <span id="num"><a href="#">I</a></span>
-        <span id="num"><a href="#">>></a></span>
+        <h1>Hostear Performance</h1>
+        <form action="performobg.html" target="_blank" method="post">
+            <label for="PerName">Nome da performance:</label><br>
+            <input type="text" id="PerName" name="PerName"><br>
+            <label for="Bio">Descrição:</label><br>
+            <input  type="text" id="Bio" name="Bio">
+            <h4>Escolha o arquivo</h4>
+            <input type="file" /> 
+            <h4>É um evento presencial ou virtual?</h4>
+            <input type="radio" id="v">
+            <label for="v">virtual</label>
+            <input type="radio" id="p">
+            <label for="p">presencial</label>
+            <br>
+             <br>
+            <button
+                onclick="alert('Agradecemos a sua solicitação, enviaremos uma confirmação na sua caixa de entrada e-mail')"
+                href="performobg.html" class="but">Enviar</button>
+        </form>
     </div>
+
 </main>
-
-
 
 <br><br>
 <footer>
