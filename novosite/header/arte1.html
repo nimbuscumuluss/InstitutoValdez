@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="header2.css" media="screen" />
-    <title>PRODUTOS - ARTES</title>
+    <title> DES PEINTURES - PRODUTO</title>
     <link rel="shortcut icon" href="img/favicon.ico" />
 
     <style>
@@ -64,6 +64,66 @@
         .imgs{
             margin: 7%;
         }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .produto {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .produto img {
+            max-width: 500px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .descricao {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .titulo {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .preco {
+            font-size: 20px;
+            color: #ff4500;
+            margin-bottom: 10px;
+        }
+
+        .botao {
+            background-color: #3399ff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .botao:hover {
+            opacity: 0.8;
+        }
     </style>
 </head>
 
@@ -85,25 +145,30 @@
 
 <!--menu e banner end-->
 <main>
-    <div class="conteiner">
-        <br>
-       <h1>
-        Artes
-       </h1>
-       <h3>explore as artes de outros usuários</h3>
-       <hr>
+    <div class="container">
+        <div class="produto">
+            <img src="img/a1.png" alt="Produto">
+            <div class="descricao">
+                <h1 class="titulo">DES PEINTURES</h1>
+                <p class="preco">R$ 400,99</p>
+                <p class="preco">❤❤❤❤❤</p>
+                <p style="color: gray;">"Des Peintures" é uma obra de arte que desafia convenções, com cores vibrantes e texturas
+                    expressivas que convidam o observador a uma jornada emocional e imaginativa. Cada pincelada
+                    parece dançar na tela, criando um intrigante jogo de luz e sombra. O título sugere uma narrativa
+                    única em cada traço, convidando o espectador a explorar novas perspectivas e descobrir a beleza
+                    na liberdade criativa.</p>
+                <a href="COMPRAR.html" class="botao">Comprar</button></a>
+                <button class="botao">Carrinho</button>
+            </div>
+        </div>
     </div>
-    <div class="imgs">
-        <a href="arte1.html"><img src="img/a1.png" width="400"></a>
-        <a href="#"><img src="img/a2.png" width="400"></a>
-        <a href="#"><img src="img/a3.png" width="400"></a>
-
-    </div>
-</main>
+    <footer>
 
 
 
-<br><br>
+
+
+
 <footer>
     &copy all rights reserved
 </footer>
