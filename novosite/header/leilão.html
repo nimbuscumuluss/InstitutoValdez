@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leilão</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Barlow Semi Condensed", sans-serif;
+        }
+
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #6798C0;
+            position: relative;
+            height: 45px;
+        }
+
+        ul.topnav li {
+            float: left;
+        }
+
+        ul.topnav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-right: solid rgba(255, 255, 255, 0.352);
+            transition: 0.2s;
+        }
+
+        ul.topnav li a:hover:not(.active) {
+            background-color: #5a828889;
+        }
+
+        ul.topnav li a.active {
+            background-color: #a4ddda;
+            font-weight: bold;
+            color: rgb(32, 82, 148);
+        }
+
+        ul.topnav li a.active:hover {
+            background-color: #87ece7;
+            font-weight: bold;
+            color: rgb(35, 103, 191);
+        }
+
+        ul.topnav li.right {
+            float: right;
+        }
+
+        @media screen and (max-width: 600px) {
+            ul.topnav li.right,
+            ul.topnav li {
+                float: none;
+            }
+        }
+
+        footer {
+            padding: 3%;
+            background-color: #99dcea;
+            font-family: "Barlow Semi Condensed", sans-serif;
+            color: rgb(255, 255, 255);
+        }
+
+        .logo {
+            margin-right: 10px;
+            margin-top: -6px;
+            height: 60px;
+            width: 60px;
+        }
+
+        .u {
+            width: 30px;
+            position: absolute;
+            right: 0px;
+            margin-right: 312px;
+            margin-top: 6px;
+        }
+
+        .search {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 1px 6px;
+            text-decoration: none;
+            font-size: 17px;
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .auctions {
+            padding: 20px;
+        }
+
+        .auction-item {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .auction-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .auction-item h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="topnav">
+        <img src="img/user-profile-icon.svg" class="u">
+        <button class="search">Search</button>
+        <input type="text" placeholder="Search.." class="search">
+
+        <li><a  href="home.html">HOME</a></li>
+        <li><a href="hist2.html">HISTÓRIA</a></li>
+        <li><a href="emissão.html">ARTES</a></li>
+        <li><a href="Soluções.html">PERFORMANCES</a></li>
+        <li><a class="active" href="leilão.html">LEILÕES</a></li>
+        <li><a href="eventos.html">EVENTOS</a></li> 
+        <li class="right"><img src="img/25a390dc-a227-491d-a3ba-1995ff13d196-removebg-preview.png" height="40" width="40"
+                class="logo"></a></li>
+    </ul>
+    <img src="b8.jpeg" width="100%">
+    <br>
+    <br>
+    <div class="auctions">
+        <h2>Artes em Leilão</h2>
+        <div class="auction-item">
+            <img src="a1.jpeg" alt="Item 1">
+            <h3>"Mugen"</h3>
+            <p>"Mugen" é uma obra de arte vibrante que captura a essência do infinito e da eternidade, como o próprio nome sugere em japonês. A composição é uma dança harmoniosa de cores e formas abstratas que se entrelaçam, criando um senso de movimento contínuo e fluidez. As cores ricas e contrastantes, que vão desde azuis profundos até vermelhos ardentes, transmitem emoções intensas e dinâmicas.</p>
+            <button>Fazer Oferta</button>
+        </div>
+        <div class="auction-item">
+            <img src="a2.jpeg" alt="Item 2">
+            <h3>"A invasão"</h3>
+            <p>"A Invasão" é uma obra de arte visual que transmite uma poderosa narrativa através de sua composição dinâmica e impactante. A peça retrata um momento de conflito e transformação, utilizando cores fortes e contrastantes para evocar emoções intensas no espectador. As figuras representadas, seja em forma humana ou abstrata, parecem emergir ou se confrontar, simbolizando uma invasão literal ou metafórica.</p>
+            <button>Fazer Oferta</button>
+        </div>
+        <div class="auction-item">
+            <img src="a3.jpeg" alt="Item 2">
+            <h3>"animals"</h3>
+            <p>"A Animals" é uma obra de arte que captura a essência e a diversidade do reino animal através de uma interpretação única e criativa. Esta peça destaca uma coleção vibrante e detalhada de diferentes espécies, exibindo a beleza e a majestade da fauna mundial.</p>
+            <button>Fazer Oferta</button>
+        </div>
+       
+
+    <footer>
+       
+    </footer>
+</body>
+
+</html>
