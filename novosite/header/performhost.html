@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="header2.css" media="screen" />
+    <title>Headerbase</title>
+
+    <style>
+        .p2 {
+            color: black;
+        }
+
+        .man {
+            float: left;
+            margin: 10px;
+            border-radius: 10px;
+            max-width: 20%;
+            min-width: 60%;
+            transition: 0.1s;
+
+        }
+
+        .man:hover {
+            max-width: 20%;
+            min-width: 64%;
+
+
+        }
+
+        .txt {
+            float: left;
+            margin-left: 40px;
+        }
+
+        .box {
+            max-height: 400px;
+            min-height: 500px;
+            min-width: 400px;
+            max-width: 700px;
+            font-size: 20px;
+        }
+
+        .conteiner {
+            padding-left: 20%;
+            padding-right: 10%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h2 {
+            transition: 0.1s;
+        }
+
+        h2:hover {
+            color: rgb(64, 195, 195);
+            text-decoration: underline;
+        }
+
+        #divBusca {
+            background-color: #E0EEEE;
+            border: solid 2px #5F9EA0;
+            border-radius: 10px;
+            width: 300px;
+            height: 32px;
+        }
+
+        #txtBusca {
+            float: left;
+            background-color: transparent;
+            padding-left: 5px;
+            font-size: 18px;
+            border: none;
+            height: 32px;
+            width: 191px;
+            margin-left: 32px;
+        }
+
+        #btnBusca {
+            border: none;
+            float: left;
+            height: 32px;
+            border-radius: 0 7px 7px 0;
+            width: 70px;
+            font-weight: bold;
+            background: #5F9EA0;
+        }
+
+        #divBusca img {
+            float: left;
+        }
+
+        .myBox {
+            border: none;
+            padding: 5px;
+            font: 24px/36px sans-serif;
+            width: 100%;
+            height: 200px;
+            overflow: scroll;
+        }
+
+        /* Scrollbar styles */
+        .myBox::-webkit-scrollbar {
+            width: 12px;
+            height: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            border: 1px solid #5F9EA0;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #5F9EA0;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #448d90;
+        }
+
+        .vid {
+            display: inline-block;
+        }
+
+        #num {
+            margin-left: 5px;
+            margin-right: 4px;
+            border: solid lightslategray;
+            padding-right: 6px;
+            padding-left: 6px;
+        }
+
+        .pages {
+            text-align: center;
+        }
+
+        .but {
+            border: 2px solid #448d90;
+            padding: 6px;
+            border-radius: 10px;
+            color: #E0EEEE;
+            background-color: #5F9EA0;
+            transition: 0.07s;
+        }
+
+        .but:hover {
+            border: 2px solid #58b0b3;
+            padding: 7px;
+            border-radius: 10px;
+            color: #000000;
+            background-color: #79cbce;
+        }
+        
+        #Bio {
+            height: 100px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<ul class="topnav">
+    <img src="img/user-profile-icon.svg" class="u">
+    <button class="search">ok</button>
+    <input type="text" placeholder="Search.." class="search">
+
+    <li><a href="home_page.html">HOME</a></li>
+    <li><a href="hist2.html">HISTÓRIA</a></li>
+    <li><a href="artes.html">ARTES</a></li>
+    <li><a href="performance.html"class="active">PERFORMANCES</a></li>
+    <li><a href="IndustriaVerde.html">LEILÕES</a></li>
+    <li><a href="eventos.html">EVENTOS</a></li>
+    <li class="right"><img src="img/25a390dc-a227-491d-a3ba-1995ff13d196-removebg-preview.png" height="40" width="40"
+            class="logo"></a></li>
+</ul>
+<img src="img/valdmisc2.png" width="100%">
+
+<!--menu e banner end-->
+<main>
+    <div class="conteiner">
+        <h1>Hostear Performance</h1>
+        <form action="performobg.html" target="_blank" method="post">
+            <label for="PerName">Nome da performance:</label><br>
+            <input type="text" id="PerName" name="PerName"><br>
+            <label for="Bio">Descrição:</label><br>
+            <input  type="text" id="Bio" name="Bio">
+            <h4>Escolha o arquivo</h4>
+            <input type="file" /> 
+            <h4>É um evento presencial ou virtual?</h4>
+            <input type="radio" id="v">
+            <label for="v">virtual</label>
+            <input type="radio" id="p">
+            <label for="p">presencial</label>
+            <br>
+             <br>
+            <button
+                onclick="alert('Agradecemos a sua solicitação, enviaremos uma confirmação na sua caixa de entrada e-mail')"
+                href="performobg.html" class="but">Enviar</button>
+        </form>
+    </div>
+
+</main>
+
+<br><br>
+<footer>
+    &copy all rights reserved
+</footer>
+
+</html>
