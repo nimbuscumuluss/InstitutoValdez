@@ -43,6 +43,7 @@
             max-width: 100%;
             height: auto;
             border: 1px solid #ffffff;
+            cursor: zoom-in;
         }
 
         .product-info {
@@ -85,7 +86,8 @@
             padding: 20px 0;
             text-align: center;
         }
-        p{
+
+        p {
             text-align: justify;
         }
     </style>
@@ -100,7 +102,9 @@
     <div class="container product-container">
         <div class="row">
             <div class="col-md-6">
-                <img src="a3.png" class="product-image" alt="Produto" width="700">
+                <div id="zoom-container">
+                    <img src="a3.png" class="product-image" id="productImage" alt="Produto" width="700">
+                </div>
             </div>
             <div class="col-md-6">
                 <div class="product-info">
@@ -109,35 +113,52 @@
                     <div class="product-description">
                         <h4>Descrição</h4>
                         <p> Tamanho: 80 x 60 cm
- <br>
+                            <br>
                             Artista: Clara Monteiro
                             <br>
                             Descrição:
-                            
+
                             "Montanha" é uma obra impressionante da renomada artista Clara Monteiro, que captura a majestade e a tranquilidade de uma paisagem montanhosa. Esta pintura a óleo em tela retrata uma vista panorâmica de montanhas imponentes sob um céu azul profundo e limpo, com nuvens suaves que flutuam ao longe.
                             <br>
-                          
-                            
+
                             Detalhes da Paisagem: As montanhas são representadas com uma riqueza de detalhes, desde as rochas ásperas até os picos nevados. A vegetação, incluindo pinheiros robustos e arbustos floridos, adiciona uma sensação de profundidade e textura ao cenário. A base das montanhas é suavemente esculpida com um lago cristalino que reflete a paisagem, criando um contraste sereno com as cores vibrantes do ambiente.
                             <br>
                             Impacto e Atmosfera: Esta obra é projetada para evocar uma sensação de paz e admiração. A vastidão das montanhas e a serenidade do lago refletem a grandiosidade da natureza e proporcionam um escape visual para quem a observa. É uma peça ideal para qualquer espaço que deseja incorporar um toque de tranquilidade e beleza natural.
-                            
-                            
-                           
-                            
-                            </p>
+                        </p>
                     </div>
-                    
-                
-                        <button class="btn btn-custom btn-lg btn-block">Comprar Agora</button>
-                        <button class="btn btn-custom btn-lg btn-block mt-2">Adicionar ao Carrinho</button>
+
+                    <button class="btn btn-custom btn-lg btn-block"><a href="CEP.html">Comprar Agora</a></button>
+                    <button class="btn btn-custom btn-lg btn-block mt-2">Adicionar ao Carrinho</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Fim da Página de Compra do Produto -->
 
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
+    <!--zoom -->
+    <script src="https://unpkg.com/@panzoom/panzoom@4.5.0/dist/panzoom.min.js"></script>
+    <script>
+        //zoom na imagem após o carregamento do DOM
+        document.addEventListener('DOMContentLoaded', function () {
+            const image = document.getElementById('productImage');
+            const panzoom = Panzoom(image, {
+                maxScale: 5,
+                contain: 'outside'
+            });
+            image.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
